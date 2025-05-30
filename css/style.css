@@ -1,2 +1,20 @@
 /* Estilos do header */
 @import url('./header.css');
+
+
+/* Comportamento do container global */
+.grid-container {
+    /* duas colunas em telas maiores */
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media(max-width: 768px) {
+    .grid-container {
+        display: grid;
+        /* uma coluna só no mobile */
+        grid-template-columns: 1fr;
+        /* espaçamento entre seções */
+        gap: 2rem;
+        padding: 1rem;
+    }
+}
