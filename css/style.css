@@ -1,0 +1,149 @@
+/* Reset dos estilos do navegador */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #0A5F8C;
+    text-shadow: 0px 1px 2px black;
+}
+
+h1 span {
+    color: #3CB371;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+header ul li a {
+    font-size: .9em;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 12px;
+    padding-bottom: 2px;
+    color: #2e2e2e;
+    transition: all 1s ease;
+    border-bottom: 2px solid transparent;
+}
+
+header ul li a:hover {
+    color: #429E9D;
+    border-bottom: 2px solid #429E9D;
+}
+
+header button {
+    margin-left: 270px;
+    font-size: .7em;
+    cursor: pointer;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    background-color: #007ACC;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+header button:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
+/* Estilo padrão menu-hamburguer */
+
+#menu-toggle {
+    display: none;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: #0A5F8C;
+    cursor: pointer;
+}
+
+/* Aplicando estilos conforme tamanho da tela (quando for menor que 768px de largura)*/
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 2em;
+        gap: 1em;
+    }
+
+    /* Esconde o menu por padrão */
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    /* Mostra o menu quando ativado */
+    nav.open {
+        display: block;
+    }
+
+    /* Exibe o botão hamburguer */
+    #menu-toggle {
+        display: block;
+        margin-left: auto;
+        padding: 4px;
+        padding-bottom: 9px;
+    }
+
+    /* Estiliza a lista como coluna */
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Quando estiver visível */
+    nav.open ul li.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header ul li a {
+        margin: 8px 0;
+    }
+
+    header ul li button {
+        width: 100%;
+        padding: 12px;
+        margin-left: 80px;
+        margin-top: 24px;
+        width: 170px;
+    }
+}
