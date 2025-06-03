@@ -1,0 +1,144 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.problema {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.problema-texto {
+    flex: 1;
+}
+
+.problema-texto h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2a3a4a;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+}
+
+.problema-texto p {
+    font-size: 1.1rem;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+}
+
+.problema-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.problema-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .problema {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
+
+    .problema-imagem {
+        display: none;
+    }
+
+    .problema-texto h2 {
+        font-size: 2rem;
+    }
+
+    .problema-texto p {
+        font-size: 1rem;
+    }
+}
+
+/* Efeito para imagem da hero */
+.aparecer-direita {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+/* Efeito para os textos da hero */
+.aparecer-esquerda {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeSlideIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Estilo do footer (rodapé) */
+
+.apoio-footer {
+    margin: 2rem 0 0 0;
+    padding: 2rem 1rem 1rem 1rem;
+    background: transparent;
+    text-align: center;
+    border-top: 1px solid #ececec;
+}
+
+.apoio-footer h3 {
+    color: #b0b3b8;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.apoio-footer .apoio-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.apoio-footer .apoio-logos img {
+    height: 48px;
+    width: auto;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.apoio-footer .apoio-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.apoio-footer .footer-info {
+    color: #b0b3b8;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .apoio-footer .apoio-logos {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .apoio-footer {
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+    }
+}
