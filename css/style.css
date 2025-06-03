@@ -1,5 +1,7 @@
 /* Estilos do header */
 @import url('./header.css');
+/* Estilos do problema */
+@import url('./problema.css');
 
 
 /* Comportamento do container global */
