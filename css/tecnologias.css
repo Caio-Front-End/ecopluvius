@@ -1,0 +1,89 @@
+.tecnologias-section {
+    margin-top: 64px;
+    padding: 64px 32px;
+    text-align: center;
+    background-color: #1c3a4f;
+}
+
+.tecnologias-section h2 {
+    margin-bottom: 46px;
+    padding: 12px;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.tecnologias-cards {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tecnologia-card {
+    /* Card invisível por padrão */
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 5px 5px 5px #000;
+    padding: 32px 20px 20px 20px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.logo-bg {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    z-index: 1;
+    background: #fff;
+    /* Remove o fundo preto */
+}
+
+.logo-bg img {
+    position: relative;
+    z-index: 1;
+    width: 34px;
+    height: 34px;
+    /* Cor personalizada: #0A5F8C */
+    filter: invert(19%) sepia(97%) saturate(1736%) hue-rotate(170deg) brightness(92%) contrast(101%);
+}
+
+@media (max-width: 768px) {
+    .tecnologias-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tecnologia-card {
+        width: 90%;
+        margin-bottom: 18px;
+    }
+
+    .tecnologias-section h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Efeito para os cards */
+
+.fade-in-down {
+    animation: fadeInDown 0.7s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
