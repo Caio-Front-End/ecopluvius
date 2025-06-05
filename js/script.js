@@ -4,7 +4,10 @@ import { headerBehavior } from "./header.js";
 import { problemaBehavior } from "./problema.js";  
 //Função que adiciona comportamento aos cards de tecnologias
 import { tecnologiasBehavior } from "./tecnologias.js";         
+//Função que adiciona comportamento aos objetivos   
+import { objetivosBehavior } from "./objetivos.js";
 
 headerBehavior();
 problemaBehavior();
 tecnologiasBehavior();
+objetivosBehavior();
