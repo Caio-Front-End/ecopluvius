@@ -8,9 +8,12 @@ import { tecnologiasBehavior } from "./tecnologias.js";
 import { objetivosBehavior } from "./objetivos.js";
 //Função que adiciona comportamento ao público alvo
 import { publicoBehavior } from "./publico.js";
+//Função que adiciona comportamento à imagem do dia a dia
+import { diaADiaBehavior } from "./dia-a-dia.js";
 
 headerBehavior();
 problemaBehavior();
 tecnologiasBehavior();
 objetivosBehavior();
 publicoBehavior();
+diaADiaBehavior();
