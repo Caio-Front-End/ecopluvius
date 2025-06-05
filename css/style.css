@@ -6,6 +6,8 @@
 @import url('./tecnologias.css');
 /* Estilos da seção de objetivos */
 @import url('./objetivos.css');
+/* Estilos da seção de público-alvo */
+@import url('./publico.css');
 
 /* Comportamento do container global */
 .grid-container {
