@@ -8,6 +8,8 @@
 @import url('./objetivos.css');
 /* Estilos da seção de público-alvo */
 @import url('./publico.css');
+/* Estilos da seção de benefícios */
+@import url('./beneficios.css');    
 
 /* Comportamento do container global */
 .grid-container {
