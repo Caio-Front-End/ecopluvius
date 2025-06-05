@@ -10,6 +10,8 @@
 @import url('./publico.css');
 /* Estilos da seção de benefícios */
 @import url('./beneficios.css');    
+/* Estilos da seção de dia-a-dia */
+@import url('./dia-a-dia.css');
 
 /* Comportamento do container global */
 .grid-container {
