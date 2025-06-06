@@ -62,18 +62,21 @@ O **Ecopluvius** é uma ferramenta interativa desenvolvida para sensibilizar e i
 
 ## 📁 Estrutura do projeto
 
-ecopluvius
+```plaintext
+ecopluvius/
 ├── assets/
-│ └── images/ # Imagens utilizadas na aplicação
-├── css/ # Arquivos de estilização (CSS)
-├── js/ # Scripts JavaScript
-├── index.html # Página inicial da aplicação
-├── simulador.html # Página do simulador de chuvas
-└── README.md # Documentação do projeto
+│   └── images/           # Imagens utilizadas na aplicação
+├── css/                  # Arquivos de estilização (CSS)
+├── js/                   # Scripts JavaScript responsáveis pela interatividade
+├── index.html            # Página inicial da aplicação (landing page)
+├── simulador.html        # Página com o simulador de chuvas interativo
+└── README.md             # Documentação do projeto
+
 
 ## 👨‍💻 Desenvolvedores
 
-| Nome                           | RM         | LinkedIn                                                 |
+| Nome                           | RM         | Rede Social                                              |
 | ------------------------------ | ---------- | -------------------------------------------------------- |
 | Caio Nascimento Battista       | 561383     | [LinkedIn](https://www.linkedin.com/in/cnbtt/)           |
 | Manoah Leão                    | 563713     | [LinkedIn](https://www.linkedin.com/in/manoah-le%C3%A3o-735a83346/)                                                                             |
+```
