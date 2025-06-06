@@ -1,0 +1,191 @@
+/* Base */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0A5F8C11;
+}
+
+/* Mapa */
+#map {
+    margin-top: 2rem;
+    height: 500px;
+    width: 100%;
+    border: 2px solid #0A5F8C;
+    border-radius: 8px;
+}
+
+/* Bloco de funcionalidades */
+.historias-usuario {
+    background: #f4f8fb;
+    border-left: 4px solid #3CB371;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.historias-usuario h2 {
+    color: #0A5F8C;
+}
+
+.historias-usuario ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+/* Controle de chuva */
+.controle-chuva {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px #0A5F8C22;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: 1px solid #0A5F8C22;
+}
+
+.controle-chuva label {
+    margin-right: 6px;
+    font-weight: bold;
+    color: #0A5F8C;
+}
+
+.controle-chuva select {
+    border-radius: 4px;
+    border: 1px solid #3CB371;
+    padding: 2px 8px;
+    color: #0A5F8C;
+    background: #fff;
+}
+
+.controle-chuva select:focus {
+    outline: 2px solid #3CB371;
+}
+
+/* Overlay do aviso */
+#aviso-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0A5F8Ccc;
+    z-index: 1999;
+    transition: opacity 0.2s;
+}
+
+/* Card do aviso */
+.aviso-didatico {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #0A5F8C;
+    border: 2px solid #3CB371;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px #0A5F8C22;
+    padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+    z-index: 2000;
+    max-width: 420px;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.aviso-didatico button {
+    background: none;
+    color: #d32f2f;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: color 0.2s, background 0.2s;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso-didatico button:hover {
+    color: #fff;
+    background: #d32f2f;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        max-width: 100vw;
+        margin: 1rem 0;
+        padding: 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #map {
+        margin-top: 1rem;
+        height: 320px;
+        min-height: 220px;
+        border-radius: 6px;
+    }
+
+    .historias-usuario {
+        padding: 0.7rem;
+        border-radius: 4px;
+        font-size: 0.98rem;
+    }
+
+    .aviso-didatico {
+        max-width: 98vw;
+        min-width: 80vw;
+        width: 90vw;
+        padding: 1rem 1.2rem 1rem 1rem;
+        font-size: 0.98rem;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .aviso-didatico button {
+        align-self: flex-start;
+        margin-left: 0.5rem;
+        margin-top: 0;
+        width: 1.7rem;
+        height: 1.7rem;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+}
+
+/* Controles do mapa acima do mapa, atrás do header */
+.leaflet-control,
+.leaflet-top,
+.leaflet-bottom {
+    z-index: 500 !important;
+}
