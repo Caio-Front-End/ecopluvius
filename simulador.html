@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador EcoPluvius</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./css/simulador.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+    <!-- Overlay escuro para o aviso didático -->
+    <div id="aviso-overlay"></div>
+    <!-- Aviso Didático -->
+    <div id="aviso-didatico" class="aviso-didatico">
+        <div>
+            <strong>Aviso:</strong> Esta aplicação possui caráter <strong>didático</strong> e demonstra a idealização de
+            um simulador de chuvas conforme área delimitada e suas informações topográficas.<br>
+            Os dados apresentados são <strong>fictícios</strong> e servem apenas para fins de ilustração e
+            aprendizado.<br>
+            O projeto está <strong>aberto para contribuição</strong> de outros desenvolvedores interessados em
+            implementar dados reais e aprimorar a aplicação.
+        </div>
+        <button id="fechar-aviso" aria-label="Fechar aviso">×</button>
+    </div>
+
+    <header>
+        <h1><span>Eco</span>Pluvius</h1>
+        <!-- Menu hamburguer -->
+        <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><button>Voltar para a Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="historias-usuario">
+            <h2>Funcionalidades do Simulador</h2>
+            <ul>
+                <li><strong>Visualizar mapa interativo:</strong> Explore as áreas de simulação.</li>
+                <li><strong>Simular chuva clicando no mapa:</strong> Clique em qualquer ponto para ver o efeito de uma
+                    enchente.</li>
+                <li><strong>Sem cadastro:</strong> Use o simulador sem login ou coleta de dados.</li>
+                <li><strong>Desempenho leve:</strong> Carregamento rápido e fluido, mesmo em conexões comuns.</li>
+            </ul>
+        </section>
+        <div id="map"></div>
+    </main>
+    <footer class="apoio-footer">
+        <h3>Apoio</h3>
+        <div class="apoio-logos">
+            <img src="./assets/images/parceiros/bombeiros.png" alt="logo corpo de bombeiros" />
+            <img src="./assets/images/parceiros/defesa-civil.png" alt="logo da defesa civil de santo andré" />
+            <img src="./assets/images/parceiros/ibm.png" alt="logo da ibm" />
+            <img src="./assets/images/parceiros/inpe.png" alt="logo do inpe" />
+            <img src="./assets/images/parceiros/medicos-sem-fronteiras.png" alt="logo do médicos sem fronteiras" />
+        </div>
+        <div class="footer-info">
+            <p>EcoPluvius © 2025 — Todos os direitos reservados.</p>
+            <p>Rua das Águas, 123, Centro, São Paulo/SP • CNPJ 12.345.678/0001-99</p>
+            <p>Contato: contato@ecopluvius.com.br</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="./js/simulador.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script>
+        // Script para fechar o aviso e o overlay
+        document.getElementById('fechar-aviso').onclick = function () {
+            document.getElementById('aviso-didatico').style.display = 'none';
+            document.getElementById('aviso-overlay').style.display = 'none';
+        };
+    </script>
+</body>
+
+</html>
