@@ -71,7 +71,7 @@ ecopluvius/
 ├── index.html            # Página inicial da aplicação (landing page)
 ├── simulador.html        # Página com o simulador de chuvas interativo
 └── README.md             # Documentação do projeto
-
+```
 
 ## 👨‍💻 Desenvolvedores
 
