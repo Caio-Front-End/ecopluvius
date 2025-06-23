@@ -75,7 +75,7 @@ ecopluvius/
 
 ## 👨‍💻 Desenvolvedores
 
-| Nome                           | RM         | Rede Social                                              |
-| ------------------------------ | ---------- | -------------------------------------------------------- |
-| Caio Nascimento Battista       | 561383     | [LinkedIn](https://www.linkedin.com/in/cnbtt/)           |
-| Manoah Leão                    | 563713     | [LinkedIn](https://www.linkedin.com/in/manoah-le%C3%A3o-735a83346/)                                                                             |
+| Nome                           | Rede Social                                              |
+| ------------------------------ | -------------------------------------------------------- |
+| Caio Nascimento Battista       | [LinkedIn](https://www.linkedin.com/in/cnbtt/)           |
+| Manoah Leão                    | [LinkedIn](https://www.linkedin.com/in/manoah-le%C3%A3o-735a83346/)                                                                             |
