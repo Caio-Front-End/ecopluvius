@@ -2,7 +2,7 @@
 
 **Simulador interativo para visualização de riscos de enchentes em áreas urbanas, com foco em acessibilidade, educação ambiental e apoio a comunidades vulneráveis.**
 
-[🔗 Acesse a aplicação online]([https://ecopluvius.vercel.app](https://passa-a-bola-web-app.vercel.app/login))
+[🔗 Acesse a aplicação online]([https://ecopluvius.vercel.app])
 
 ---
 
